@@ -1,0 +1,121 @@
+html {
+    margin: 0;
+}
+
+span {
+    display: block;
+}
+
+.canvas {
+    margin: 15% auto 15% ;
+    width: 80%;
+    text-align: center;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+
+#grey {
+    background: grey;
+}
+
+#white {
+    background: white;
+}
+
+#blue {
+    background: blue;
+}
+
+#yellow {
+    background: yellow;
+}
+
+#aqua {
+    background: aqua;
+}
+
+
+Memory updated
+To make the color scheme switcher responsive to every device, you can add media queries to adjust the layout and size of elements depending on the screen size. Here's how you can update your CSS:
+
+css
+Copy code
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    display: block;
+}
+
+.canvas {
+    margin: 10% auto;
+    width: 80%;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#grey {
+    background: grey;
+}
+
+#white {
+    background: white;
+}
+
+#blue {
+    background: blue;
+}
+
+#yellow {
+    background: yellow;
+}
+
+#aqua {
+    background: aqua;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .canvas {
+        width: 90%;
+        margin: 20% auto;
+    }
+    
+    .button {
+        width: 80px;
+        height: 80px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
